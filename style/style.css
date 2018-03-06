@@ -12,6 +12,7 @@ html, body {
 body {
 	background: black;
 	color: white;
+	padding: 10px;
 }
 
 main {
@@ -23,6 +24,51 @@ h1 {
 	font-size: 36px;
 	text-align: center;
 	color: white;
+	margin: 20px;
+}
+
+.self-desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.self-desc-info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.self-desc-line {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 490px;
+	padding: 10px;
+	border-bottom: 1px solid white;
+	font-size: 18px;
+}
+
+.self-desc-question {
+	flex: 1;
+	padding: 10px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.self-desc-answer {
+	flex: 2;
+	padding: 10px;
+}
+
+.profile-image-box {
+	flex: 1;
+	padding: 20px;
+	max-height: 480px;
+	max-width: 480px;
 }
 
 .info-section {
@@ -39,7 +85,6 @@ h1 {
 .image-box {
 	flex: 1;
 	padding: 20px;
-	display: inline-block;
 	max-height: 280px;
 	max-width: 280px;
 	transition: transform 0.1s linear;
@@ -49,7 +94,7 @@ h1 {
 	transform: scale(1.07, 1.07);
 }
 
-.image-box-picture {
-	height: 100%;
-	width: auto;
+.responsive-image {
+	width: 100%;
+	height: auto;
 }
